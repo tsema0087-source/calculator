@@ -1,0 +1,8 @@
+{
+  "name": "Material You Calculator",
+  "short_name": "Calc M3",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F7FBF1",
+  "theme_color": "#386A20"
+}

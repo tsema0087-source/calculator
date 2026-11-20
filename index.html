@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="sage">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#F7FBF1" id="meta-theme-color">
+    <title>Material You Calculator</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="top-bar">
+            <div class="palette-picker">
+                <button class="swatch active" data-theme="sage" style="background:#386A20" aria-label="Sage"></button>
+                <button class="swatch" data-theme="lavender" style="background:#6750A4" aria-label="Lavender"></button>
+                <button class="swatch" data-theme="ocean" style="background:#0061A4" aria-label="Ocean"></button>
+                <button class="swatch" data-theme="terracotta" style="background:#9C4146" aria-label="Terracotta"></button>
+            </div>
+            <button class="dark-btn" id="darkToggle" aria-label="Тёмная тема">🌓</button>
+        </header>
+
+        <main class="screen">
+            <div class="expr" id="expr"></div>
+            <div class="result" id="result">0</div>
+        </main>
+
+        <section class="pad">
+            <button class="btn ac" data-action="clear">AC</button>
+            <button class="btn fn" data-action="paren">( )</button>
+            <button class="btn fn" data-val="%">%</button>
+            <button class="btn op" data-val="÷">÷</button>
+
+            <button class="btn num" data-val="7">7</button>
+            <button class="btn num" data-val="8">8</button>
+            <button class="btn num" data-val="9">9</button>
+            <button class="btn op" data-val="×">×</button>
+
+            <button class="btn num" data-val="4">4</button>
+            <button class="btn num" data-val="5">5</button>
+            <button class="btn num" data-val="6">6</button>
+            <button class="btn op" data-val="−">−</button>
+
+            <button class="btn num" data-val="1">1</button>
+            <button class="btn num" data-val="2">2</button>
+            <button class="btn num" data-val="3">3</button>
+            <button class="btn op" data-val="+">+</button>
+
+            <button class="btn num" data-val="0">0</button>
+            <button class="btn num" data-val=",">,</button>
+            <button class="btn num" data-action="back">⌫</button>
+            <button class="btn eq" data-action="eq">=</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
